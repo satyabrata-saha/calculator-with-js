@@ -1,0 +1,14 @@
+:root {
+    --bg: #424242;
+    --btn-1: #229799;
+    --btn-2: #48CFCB;
+    --text: #F5F5F5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--bg);
+    color: var(--text);
+}
