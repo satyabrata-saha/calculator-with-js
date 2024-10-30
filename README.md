@@ -1,4 +1,4 @@
-# calculator-with-JS.
+# Calculator with JS
 
 A Calculator app with html css javascript
 
