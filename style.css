@@ -70,12 +70,31 @@
 
 .output-display {
     width: 100%;
-    height: 20%;
+    height: 25%;
     display: flex;
+    justify-content: flex-end;
     align-items: center;
+    flex-direction: column;
     justify-content: end;
     background-color: var(--text);
     padding: 5px;
+    overflow-wrap: break-word;
+    position: relative;
+}
+
+.output-display span {
+    width: 100%;
+    margin-right: 5px;
+    font-size: 10px;
+    background-color: var(--text);
+    color: var(--black-text);
+    opacity: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    overflow-wrap: break-word;
+    position: absolute;
+    top: 10px;
 }
 
 .output-display p {
@@ -87,7 +106,7 @@
     display: flex;
     align-items: center;
     justify-content: end;
-    text-wrap: wrap;
+    word-break: break-all;
 }
 
 .inputs-elements {
@@ -95,7 +114,7 @@
     flex-direction: column;
     padding: 5px;
     width: 100%;
-    height: 80%;
+    height: 75%;
     gap: 5px;
     background-color: var(--text);
 }
