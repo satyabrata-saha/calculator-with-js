@@ -166,6 +166,25 @@ btns.forEach(btn => {
 
         }
 
+        if (textOutput1.toString().length <= 8) {
+            outputResultDisplay.style.fontSize = "48px";
+        }
+        if (textOutput1.toString().length > 8 && textOutput1.toString().length <= 21) {
+            outputResultDisplay.style.fontSize = "40px";
+        }
+        if (textOutput1.toString().length > 21 && textOutput1.toString().length <= 28) {
+            outputResultDisplay.style.fontSize = "30px";
+        }
+        if (textOutput1.toString().length > 28 && textOutput1.toString().length <= 36) {
+            outputResultDisplay.style.fontSize = "24px";
+        }
+        if (textOutput1.toString().length > 36 && textOutput1.toString().length <= 55) {
+            outputResultDisplay.style.fontSize = "20px";
+        }
+        if (textOutput1.toString().length > 55) {
+            outputResultDisplay.style.fontSize = "14px";
+        }
+
     }
 
 });
@@ -179,6 +198,7 @@ function clearOutputText() {
     inputoparator = "";
     outputDisplaySpan = "";
     outputResultDisplaySpan.textContent = outputDisplaySpan;
+    outputResultDisplay.style.fontSize = "48px";
 }
 
 equal.addEventListener('click', equalOutputText);
@@ -200,16 +220,15 @@ function equalOutputText() {
         result = Number(textOutput1) / Number(textOutput2);
     }
 
-    if (result < 9999999999) {
+
+    if (result.toString().length <= 9) {
         outputResultDisplay.style.fontSize = "48px";
-    } if (result < 99999999999 && result > 9999999999) {
+    }
+    if (result.toString().length > 9 && result.toString().length <= 18) {
         outputResultDisplay.style.fontSize = "40px";
-    } if (result < 999999999999 && result > 99999999999) {
+    }
+    if (result.toString().length > 18) {
         outputResultDisplay.style.fontSize = "36px";
-    } if (result < 9999999999999 && result > 99999999999999) {
-        outputResultDisplay.style.fontSize = "34px";
-    } if (result > 99999999999999) {
-        outputResultDisplay.style.fontSize = "320px";
     }
 
     outputResultDisplay.textContent = result;

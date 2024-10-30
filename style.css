@@ -93,6 +93,7 @@
     align-items: center;
     justify-content: end;
     overflow-wrap: break-word;
+    word-break: break-all;
     position: absolute;
     top: 10px;
 }
